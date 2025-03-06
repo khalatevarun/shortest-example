@@ -5,6 +5,8 @@ export default {
   headless: false,
   baseUrl: "https://github.com",
   testPattern: "**/*.test.ts",
-  anthropicKey: process.env.ANTHROPIC_API_KEY,
+  ai: {
+    provider: "anthropic",
+  }
 } satisfies ShortestConfig;
 
